@@ -1,0 +1,15 @@
+{
+  "name": "js-oop-project-62",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:solomonya/js-oop-project-62.git",
+  "author": "solomon khan <hansolomon168@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
