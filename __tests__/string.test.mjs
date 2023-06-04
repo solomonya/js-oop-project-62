@@ -1,6 +1,6 @@
 import test from 'node:test';
 import { strict as assert } from 'node:assert';
-import Validator from '../index.mjs';
+import { Validator } from '../index.mjs';
 
 test('String validation', async (t) => {
   await t.test('Create non required string schema', () => {

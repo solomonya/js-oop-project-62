@@ -1,5 +1,3 @@
-import { Validator } from "./src/Validator.mjs";
+import { Validator } from './src/Validator.mjs';
 
-export {
-  Validator
-};
+export { Validator };
