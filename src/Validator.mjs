@@ -1,4 +1,4 @@
-import { StringValidator } from '../lib/validators/index.mjs';
+import { NumberValidator, StringValidator } from '../lib/validators/index.mjs';
 
 class Validator {
   constructor() {
@@ -11,9 +11,20 @@ class Validator {
     return this.validator;
   }
 
+  number() {
+    this.validator = new NumberValidator(this);
+    return this.validator;
+  }
+
   setRequired() {
     this.isRequired = true;
   }
 }
+
+const v = new Validator();
+
+const schema = v.number();
+
+console.log(schema.isValid('123'));
 
 export { Validator };
