@@ -1,4 +1,4 @@
-import { NumberValidator, StringValidator } from '../lib/validators/index.mjs';
+import { ArrayValidator, NumberValidator, StringValidator } from '../lib/validators/index.mjs';
 
 class Validator {
   constructor() {
@@ -13,6 +13,11 @@ class Validator {
 
   number() {
     this.validator = new NumberValidator(this);
+    return this.validator;
+  }
+
+  array() {
+    this.validator = new ArrayValidator(this);
     return this.validator;
   }
 
