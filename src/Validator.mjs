@@ -26,10 +26,4 @@ class Validator {
   }
 }
 
-const v = new Validator();
-
-const schema = v.number();
-
-console.log(schema.isValid('123'));
-
 export { Validator };
