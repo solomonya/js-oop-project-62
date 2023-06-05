@@ -1,28 +1,16 @@
 import { ArrayValidator, NumberValidator, StringValidator } from '../lib/validators/index.mjs';
 
 class Validator {
-  constructor() {
-    this.isRequired = false;
-    this.validator = null;
-  }
-
   string() {
-    this.validator = new StringValidator(this);
-    return this.validator;
+    return new StringValidator(this);
   }
 
   number() {
-    this.validator = new NumberValidator(this);
-    return this.validator;
+    return new NumberValidator(this);
   }
 
   array() {
-    this.validator = new ArrayValidator(this);
-    return this.validator;
-  }
-
-  setRequired() {
-    this.isRequired = true;
+    return new ArrayValidator(this);
   }
 }
 
